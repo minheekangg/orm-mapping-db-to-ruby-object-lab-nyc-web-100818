@@ -3,9 +3,9 @@ class Student
 
   def self.new_from_db(row)
     new_song = Student.new
-    new_song.id = row[id]
-    new_song.name = row[1]
-    new_song.grade = row[2]
+    new_song.id = row[:id]
+    new_song.name = row[:name]
+    new_song.grade = row[:grade]
 
   end
 
