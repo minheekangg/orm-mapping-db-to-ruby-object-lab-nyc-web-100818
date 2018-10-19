@@ -90,7 +90,7 @@ class Student
      SELECT *
      FROM students
      WHERE grade = 10
-     LIMIT ?
+     LIMIT (?)
      ORDER BY name ASC;
    SQL
 
