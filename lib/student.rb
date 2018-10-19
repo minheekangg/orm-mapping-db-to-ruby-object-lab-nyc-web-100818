@@ -3,12 +3,9 @@ class Student
 
   def self.new_from_db(row)
     new_song = Student.new
-    row.each {|k,v|
-      self.send(("#{k}="), v)}
     new_song.id = row[:id]
     new_song.name = row[:name]
     new_song.grade = row[:grade]
-
   end
 
   def self.all
