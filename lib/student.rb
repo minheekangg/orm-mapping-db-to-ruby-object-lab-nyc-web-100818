@@ -91,7 +91,7 @@ class Student
      FROM students
      WHERE grade = 10
      LIMIT x
-     ORDER BY name ASC
+     ORDER BY name ASC;
    SQL
 
    DB[:conn].execute(sql).map do |row|
